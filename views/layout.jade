@@ -4,5 +4,26 @@ html
 		title= title
 		// Viewport mobile tag for sensible mobile support
 		meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1")
-	body
+		link(href="/ui/reset.min.css",rel="stylesheet",type="text/css")
+		link(href="/ui/site.min.css",rel="stylesheet",type="text/css")
+		link(href="/ui/input.min.css",rel="stylesheet",type="text/css")
+		link(href="/ui/button.min.css",rel="stylesheet",type="text/css")
+		link(href="/ui/icon.min.css",rel="stylesheet",type="text/css")
+		link(href="/ui/transition.min.css",rel="stylesheet",type="text/css")
+		link(href="/ui/menu.min.css",rel="stylesheet",type="text/css")
+		link(href="/ui/label.min.css",rel="stylesheet",type="text/css")
+		link(href="/ui/accordion.min.css",rel="stylesheet",type="text/css")
+		link(href="/ui/list.min.css",rel="stylesheet",type="text/css")
+		link(href="/ui/popup.min.css",rel="stylesheet",type="text/css")
+		link(href="/styles/importer.css",rel="stylesheet",type="text/css")
+	body(ng-app="requiem")
 		block body
+		script(src="/js/dependencies/angular.min.js")
+		script(src="/js/dependencies/sails.io.js")
+		script(src="/js/dependencies/angular-sails.min.js")
+		script(src="/js/dependencies/jquery.js")
+		script(src="/ui/site.min.js")
+		script(src="/ui/transition.min.js")
+		script(src="/ui/accordion.min.js")
+		script(src="/ui/popup.min.js")
+		script(src="/js/main.js")

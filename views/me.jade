@@ -1,0 +1,23 @@
+extends layout
+block body
+	main(ng-controller="userController")
+		.ui.pointing.menu
+			a.active.item
+				i.home.icon
+				|Bienvenido 
+				strong aas
+			.right.menu
+				.ui.item
+					a.ui.button.red(href="/logout") Logout
+		.ui.vertical.menu
+			a.item
+				.ui.fluid.accordion
+					.title.teal
+						.dropdown.icon
+						| Quizes
+					.content
+						ul.ui.link.list
+							li.item 12
+			a.item Crete Quiz
+				i.announcement.icon.teal
+			a.active.teal.item.popup(data-content="Restan 4 rooms",data-position="right center",data-variation="inverted") 34 Quizes created!

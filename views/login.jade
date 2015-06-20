@@ -1,6 +1,12 @@
 extends layout
 block body
-	form(action="/login",method="POST")
-		input(type="text",name="email")
-		input(type="password",name="passwd")
-		button(type="submit") init
+	form(action="/login",method="POST",ng-controller="loginController")
+		h3 Requiem Login
+		.ui.icon.fluid.input
+			input(type="text",name="email",placeholder="E-mail")
+			i.user.icon
+		.ui.icon.fluid.input
+			input(type="password",name="passwd",placeholder="Contraseña")
+			i.lock.icon
+		button.ui.primary.button(type="submit") Iniciar Sesión
+		a(href="#") Olvidé mi contraseña
